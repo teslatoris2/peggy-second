@@ -136,6 +136,29 @@ h1, h2 {
   line-height: 0.95;
 }
 
+/* Working hours styling to match definehair.ca */
+.working-hours .elementor-icon-list-items{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.working-hours .elementor-icon-list-item{
+  display: block;
+}
+.working-hours .elementor-icon-list-text{
+  font-family: var(--font-inter);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: var(--color-muted-text);
+  display: inline-block;
+}
+.working-hours .elementor-icon-list-item + .elementor-icon-list-item{
+  margin-top: 18px;
+}
+.working-hours .elementor-icon-list-text.font-semibold{
+  color: var(--color-deep-black);
+}
+
 /* Header / nav tuning */
 .site-nav-link{
   font-size: 1.15rem;
