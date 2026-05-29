@@ -1,0 +1,9 @@
+/* Simple Ken-Burns-like zoom for active testimonial images */
+.testimonial-swiper .testimonial-image{
+  transition: transform 14s ease-in-out;
+  transform-origin: center center;
+}
+
+.testimonial-swiper .swiper-slide-active .testimonial-image{
+  transform: scale(1.15);
+}

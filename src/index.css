@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;600;700;900&family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-gold: #C9A96E;
+  --color-deep-black: #0A0A0A;
+  --color-offwhite-cream: #FAF7F2;
+  --color-charcoal: #2C2C2C;
+  --color-muted-text: #6B6B6B;
+  --font-playfair: 'Playfair Display', Georgia, "Times New Roman", serif;
+  --font-inter: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  line-height: 1.7;
+  background-color: var(--color-offwhite-cream);
+  color: var(--color-charcoal);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-charcoal) transparent;
+}
+
+/* Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Utility for backdrop blur fallback */
+.backdrop-blur-safe {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  color: var(--color-deep-black);
+}
+
+/* Hero heading utility used across the site for large, elegant titles */
+.hero-heading{
+  font-family: var(--font-playfair);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+/* Splash screen tweaks */
+.splash-logo {
+  max-width: 280px;
+}
+
+/* Slight tighter letter spacing for headings */
+h1, h2 {
+  letter-spacing: -0.01em;
+}
+
+/* Announcement bar */
+.announcement {
+  background: #F7E6E2;
+  color: var(--color-deep-black);
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+}
+.opening-script{
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.75rem, 6.5vw, 4rem);
+  color: var(--color-deep-black);
+  line-height: 0.95;
+}
+
+/* Header / nav tuning */
+.site-nav-link{
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+/* Small layout helpers used across peggy components */
+.page {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 64px 24px;
+}
+
+.page h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.page p {
+  margin: 0 0 24px;
+  max-width: 680px;
+  color: var(--color-muted-text);
+}
+
+.page-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
