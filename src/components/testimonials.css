@@ -7,3 +7,11 @@
 .testimonial-swiper .swiper-slide-active .testimonial-image{
   transform: scale(1.15);
 }
+
+/* Hover state from group to slightly boost image pop */
+.testimonial-card .testimonial-image{
+  transition: transform 700ms ease;
+}
+.testimonial-card:hover .testimonial-image{
+  transform: scale(1.06);
+}

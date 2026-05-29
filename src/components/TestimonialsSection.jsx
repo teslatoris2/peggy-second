@@ -52,21 +52,21 @@ function TestimonialsSection() {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.name}>
-              <article className="rounded-[28px] bg-white p-10 md:p-12 shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+              <article className="testimonial-card group rounded-[28px] bg-white p-10 md:p-12 transform transition-transform duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)]">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="md:w-3/5 text-left">
                     <div className="flex items-center gap-3 text-yellow-500">
                       {[...Array(5)].map((_, index) => (
-                        <Star key={index} size={22} fill="currentColor" aria-hidden="true" />
+                        <Star key={index} size={22} fill="currentColor" aria-hidden="true" className="transition-colors duration-200 group-hover:text-[#C9A96E]" />
                       ))}
                     </div>
-                    <p className="mt-4 text-[28px] md:text-[40px] italic leading-[1.02]">“{testimonial.quote}”</p>
-                    <div className="mt-6 text-[15px] md:text-[18px] text-muted-text"><strong>{testimonial.name}</strong><span className="ml-3">{testimonial.service}</span></div>
+                    <p className="mt-4 text-[28px] md:text-[40px] italic leading-[1.02] tracking-tight text-[#111111]">“{testimonial.quote}”</p>
+                    <div className="mt-6 text-[15px] md:text-[18px] text-muted-text tracking-wide"><strong>{testimonial.name}</strong><span className="ml-3">{testimonial.service}</span></div>
                   </div>
 
                   <div className="md:w-2/5">
                     <div className="h-80 md:h-[520px] w-full overflow-hidden rounded-md bg-offwhite-cream">
-                      <img src={testimonial.image} alt={`${testimonial.service} result`} className="h-full w-full object-cover testimonial-image" />
+                      <img src={testimonial.image} alt={`${testimonial.service} result`} className="h-full w-full object-cover testimonial-image transition-transform duration-700 group-hover:scale-105" />
                     </div>
                   </div>
                 </div>

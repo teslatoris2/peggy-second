@@ -24,7 +24,7 @@ function VisitUsSection() {
         <div className="pl-8 border-l border-gray-300">
           <div className="mt-6 w-full">
             <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8">
-              <div className="md:flex-1 bg-white border border-gray-200 rounded-[28px] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] min-h-[320px] md:min-h-[420px] flex flex-col justify-center">
+              <div className="md:flex-1 group bg-white border border-gray-200 rounded-[28px] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] min-h-[320px] md:min-h-[420px] flex flex-col justify-center transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
                 <dl className="space-y-4">
                   {hours.map(([day, time]) => (
                     <div className="flex items-center justify-between" key={day}>
@@ -39,7 +39,7 @@ function VisitUsSection() {
 
               <div className="hidden md:block w-px bg-gray-200" aria-hidden="true" />
 
-              <div className="md:flex-1 rounded-[28px] overflow-hidden bg-white">
+              <div className="md:flex-1 rounded-[28px] overflow-hidden bg-white transform transition-transform duration-300 group-hover:scale-[1.002]">
                 <iframe
                   title="Map to salon"
                   src="https://www.google.com/maps?q=200%20Windflower%20Gate%20Unit%20%236%2C%20Vaughan%2C%20L4L%209L3&output=embed"
