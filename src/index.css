@@ -95,6 +95,28 @@ h6 {
   max-width: 280px;
 }
 
+/* Splash screen styling */
+.splash-screen {
+  background: #F7E6E2;
+}
+
+.splash-ornament {
+  width: 320px;
+  opacity: 0.5;
+  filter: blur(0.5px) contrast(0.95);
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* Slight floating animation on the logo for cinematic feel */
+.splash-logo {
+  max-width: 300px;
+  will-change: transform, opacity;
+}
+
+@media (min-width: 768px) {
+  .splash-logo { max-width: 360px; }
+}
+
 /* Slight tighter letter spacing for headings */
 h1, h2 {
   letter-spacing: -0.01em;
