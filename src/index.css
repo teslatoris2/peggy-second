@@ -159,6 +159,12 @@ h1, h2 {
   color: var(--color-deep-black);
 }
 
+/* Left column content wrapper to set consistent width */
+.visit-left-content {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
 /* Header / nav tuning */
 .site-nav-link{
   font-size: 1.15rem;

@@ -11,9 +11,9 @@ const hours = [
 function VisitUsSection() {
   return (
     <section id="visit-us" className="mx-auto max-w-7xl px-6 py-12 bg-[#F7E6E2]">
-      <div className="grid gap-6 md:grid-cols-2 items-center">
+      <div className="grid gap-6 md:grid-cols-2 items-stretch">
         <div className="flex items-center">
-          <div className="w-full text-center md:text-left">
+          <div className="w-full text-center md:text-left md:flex md:items-center md:justify-center md:min-h-[420px]">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-primary sm:tracking-[0.28em]">VISIT US</p>
             <h2 className="opening-script text-4xl md:text-6xl">Opening Hours</h2>
 
@@ -21,9 +21,11 @@ function VisitUsSection() {
           </div>
         </div>
 
-        <div className="pl-8 border-l border-gray-300">
-          <div className="working-hours">
-            <ul className="elementor-icon-list-items space-y-6">
+        <div className="pl-8">
+          <div className="md:h-full md:flex md:items-center">
+            <div className="border-l border-gray-300 h-full md:pl-8 flex items-center">
+              <div className="working-hours md:min-h-[420px] w-full">
+                <ul className="elementor-icon-list-items space-y-6">
               {hours.map(([day, time]) => (
                 <li className="elementor-icon-list-item" key={day}>
                   <span className={`elementor-icon-list-text ${day.toLowerCase().includes('friday') ? 'font-semibold text-deep-black' : 'text-muted-text'}`}>
@@ -31,7 +33,9 @@ function VisitUsSection() {
                   </span>
                 </li>
               ))}
-            </ul>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
