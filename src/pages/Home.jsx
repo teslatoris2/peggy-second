@@ -1,5 +1,6 @@
 import HeroSlider from '../components/HeroSlider'
 import FounderSection from '../components/FounderSection'
+import ExtensionsFeature from '../components/ExtensionsFeature'
 import ServicesShowcase from '../components/ServicesShowcase'
 import TestimonialsSection from '../components/TestimonialsSection'
 import VisitUsSection from '../components/VisitUsSection'
@@ -26,9 +27,10 @@ const featuredServices = [
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <HeroSlider />
       <FounderSection />
+      <ExtensionsFeature />
       <ServicesShowcase />
       <TestimonialsSection />
       <VisitUsSection />
@@ -42,7 +44,7 @@ function Home() {
             ))}
           </div>
         </section>
-    </>
+    </div>
   )
 }
 

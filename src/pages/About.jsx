@@ -1,3 +1,5 @@
+import ExtensionsFeature from '../components/ExtensionsFeature'
+
 function About() {
   return (
     <section className="page">
@@ -12,6 +14,8 @@ function About() {
 
         <p className="mt-4">Every service is performed with meticulous attention to detail, precision, and the highest standards of cleanliness and care.</p>
       </div>
+
+      <ExtensionsFeature />
     </section>
   )
 }

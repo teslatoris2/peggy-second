@@ -10,8 +10,9 @@ const hours = [
 
 function VisitUsSection() {
   return (
-    <section id="visit-us" className="mx-auto max-w-7xl px-6 py-12 bg-[#F7E6E2]">
-      <div className="grid gap-6 md:grid-cols-2 items-stretch">
+    <section id="visit-us" className="w-full bg-[#F7E6E2]">
+      <div className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-6 md:grid-cols-2 items-stretch">
         <div className="flex items-center">
           <div className="w-full text-center md:text-left md:flex md:items-center md:justify-center md:min-h-[420px]">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-primary sm:tracking-[0.28em]">VISIT US</p>
@@ -37,6 +38,7 @@ function VisitUsSection() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

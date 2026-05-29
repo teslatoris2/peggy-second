@@ -37,26 +37,30 @@ function FounderSection() {
         </motion.div>
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-          <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants}>Face Behind the Brand</motion.p>
+          <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
+            Face Behind the Brand
+          </motion.p>
 
-          <motion.h2 className="mt-2 text-3xl md:text-4xl font-heading" variants={fadeUpVariants}>Peggy Zokaie — Master Colorist & Blonde Specialist</motion.h2>
+          <motion.h2 className="mt-2 text-3xl md:text-4xl font-heading" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
+            Peggy Zokaie — Master Colorist & Blonde Specialist
+          </motion.h2>
 
-          <motion.p className="mt-4 text-sm text-muted-text" variants={fadeUpVariants}>
+          <motion.p className="mt-4 text-sm text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
             Peggy Zokaie brings over 18 years of global experience and a refined eye for colour, balance, and natural-looking extensions. Licensed in Canada, Peggy combines technical mastery with a calm, guest-first approach — delivering bespoke colour, seamless extensions, and polished results that suit your lifestyle.
           </motion.p>
 
           <motion.div className="mt-6 grid grid-cols-3 gap-4" variants={fadeUpVariants}>
             {stats.map((stat) => (
               <div key={stat} className="text-center">
-                <strong className="block text-xl">{stat}</strong>
+                <strong className="block text-xl" style={{ fontSize: 'var(--faq-question-size)' }}>{stat}</strong>
               </div>
             ))}
           </motion.div>
 
           <motion.ul className="mt-6 list-inside grid gap-2" variants={containerVariants}>
-            <li className="text-sm">Hygiene-first professional care</li>
-            <li className="text-sm">Premium salon products</li>
-            <li className="text-sm">Personalized consultations</li>
+            <li className="text-sm" style={{ fontSize: 'var(--faq-answer-size)' }}>Hygiene-first professional care</li>
+            <li className="text-sm" style={{ fontSize: 'var(--faq-answer-size)' }}>Premium salon products</li>
+            <li className="text-sm" style={{ fontSize: 'var(--faq-answer-size)' }}>Personalized consultations</li>
           </motion.ul>
 
           <motion.div className="mt-6 flex gap-3" variants={fadeUpVariants}>

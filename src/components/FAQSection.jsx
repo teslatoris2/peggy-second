@@ -44,7 +44,7 @@ function FAQSection() {
 
   return (
     <section id="faq" className="mx-auto max-w-7xl px-6 py-12">
-      <h2 className="text-2xl font-heading">Frequently Asked Questions</h2>
+      <h2 className="text-2xl font-heading" style={{ fontSize: 'var(--faq-title-size)' }}>Frequently Asked Questions</h2>
 
       <div className="mt-6 grid gap-4">
         {faqs.map((faq, index) => {
@@ -53,14 +53,14 @@ function FAQSection() {
           return (
             <article key={faq.question} className="rounded-lg border bg-white p-4">
               <button aria-expanded={isOpen} className="flex w-full items-center justify-between" onClick={() => setOpenIndex(isOpen ? null : index)} type="button">
-                <span className="text-sm font-medium">{faq.question}</span>
-                <span className={`text-sm ${isOpen ? 'rotate-45' : ''}`}>+</span>
+                <span className="faq-question font-medium">{faq.question}</span>
+                <span className={`faq-icon ${isOpen ? 'rotate-45' : ''}`}>+</span>
               </button>
 
               <AnimatePresence initial={false}>
                 {isOpen && (
                   <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }} initial={{ opacity: 0 }} transition={{ duration: 0.2 }}>
-                    <p className="mt-3 text-sm text-muted-text">{faq.answer}</p>
+                    <p className="mt-3 text-muted-text" style={{ fontSize: 'var(--faq-answer-size)' }}>{faq.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

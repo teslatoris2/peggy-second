@@ -15,10 +15,15 @@
 }
 
 html {
-  font-size: 20px;
+  /* Increased base font size by 2% to scale all rem-based text */
+  font-size: 22.44px; /* 22px * 1.02 */
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+/* FAQ specific typography — use the overrides in app/globals.css instead */
+/* Kept minimal here to avoid conflicts. */
+
 
 body {
   font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
@@ -194,3 +199,38 @@ h1, h2 {
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+
+/* === User overrides: easy places to edit FAQ / nav sizes === */
+/* Edit these values to control sizes directly. Values use rem/px and support mobile caps. */
+:root {
+  --faq-title-size: 20rem; /* default desktop */
+  --faq-title-size-sm: 2rem; /* mobile */
+  --faq-question-size: 2.25rem;
+  --faq-icon-size: 2.25rem;
+  --nav-link-size: 1.35rem;
+  --page-paragraph-size: 1.125rem;
+}
+
+#faq h2 {
+  font-size: var(--faq-title-size) !important;
+  line-height: 1.02;
+}
+
+#faq .faq-question {
+  font-size: var(--faq-question-size) !important;
+}
+
+#faq .faq-icon {
+  font-size: var(--faq-icon-size) !important;
+}
+
+.site-nav-link { font-size: var(--nav-link-size) !important; }
+.page p { font-size: var(--page-paragraph-size) !important; }
+
+@media (max-width: 640px) {
+  #faq h2 { font-size: var(--faq-title-size-sm) !important; }
+  #faq .faq-question { font-size: 1.25rem !important; }
+  #faq .faq-icon { font-size: 1.25rem !important; }
+}
+
+/* End overrides */
