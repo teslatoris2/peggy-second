@@ -33,8 +33,21 @@ function FounderSection() {
     <section ref={ref} className="mx-auto max-w-7xl px-6 py-12">
       <div className="grid gap-8 md:grid-cols-2 md:items-stretch">
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={fadeUpVariants} className="h-full md:min-h-[560px]">
-          <div className="rounded-lg overflow-hidden ring-1 ring-gray-100 shadow-md">
-            <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-full object-top" />
+          <div
+            className="rounded-lg overflow-hidden ring-1 ring-gray-100 shadow-md h-full"
+            style={{
+              borderRadius: '28px',
+              overflow: 'hidden',
+              WebkitClipPath: 'inset(0 round 28px)',
+              clipPath: 'inset(0 round 28px)',
+            }}
+          >
+            <img
+              src="/images/salon/peggy-portrait.png"
+              alt="Salon founder portrait"
+              className="object-cover w-full h-full"
+              style={{ display: 'block', objectPosition: 'top' }}
+            />
           </div>
         </motion.div>
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants} className="h-full md:min-h-[560px]">
