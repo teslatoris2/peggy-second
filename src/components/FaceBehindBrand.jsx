@@ -81,9 +81,9 @@ function FaceBehindBrand() {
         </motion.div>
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-          <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-10 shadow-lg">
+          <div className="brand-card shadow-lg" style={{ padding: '1.5rem' }}>
             <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants}>FACE BEHIND THE BRAND</motion.p>
-            <motion.h2 className="mt-2 text-2xl font-heading" variants={fadeUpVariants}>Julie Brocca, Founder & Creative Director</motion.h2>
+              <motion.h2 className="mt-2 text-2xl font-heading" variants={fadeUpVariants}>Julie Brocca, <span className="brand-accent">Founder &amp; Creative Director</span></motion.h2>
             <motion.p className="mt-3 text-sm text-muted-text" variants={fadeUpVariants}>With over 20 years of experience in the hair and beauty industry, Julie Brocca transformed her lifelong passion for hairstyling into an award-winning luxury salon in Vaughan.</motion.p>
 
             <motion.div className="mt-6 grid grid-cols-3 gap-4" variants={fadeUpVariants}>

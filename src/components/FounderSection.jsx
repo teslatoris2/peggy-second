@@ -39,13 +39,13 @@ function FounderSection() {
         </motion.div>
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-          <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-10 shadow-lg">
+            <div className="brand-card shadow-lg" style={{ padding: '1.5rem' }}>
             <motion.p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[#7A5B22]" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
               Face Behind the Brand
             </motion.p>
 
-            <motion.h2 className="font-heading text-4xl leading-tight text-deep-black sm:text-5xl" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
-              Peggy Zokaie — <span className="text-[#C7936B]">Master Colorist &amp; Blonde Specialist</span>
+              <motion.h2 className="mt-2 text-3xl md:text-4xl font-heading leading-tight" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
+                Peggy Zokaie — <span className="brand-accent">Master Colorist &amp; Blonde Specialist</span>
             </motion.h2>
 
             <motion.p className="mt-6 leading-8 text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
