@@ -40,30 +40,31 @@ function FounderSection() {
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
             <div className="brand-card shadow-lg" style={{ padding: '1.5rem' }}>
-            <motion.p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[#7A5B22]" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
-              Face Behind the Brand
+            <motion.p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] brand-heading-color" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
+              FACE BEHIND THE BRAND
             </motion.p>
 
-              <motion.h2 className="mt-2 text-3xl md:text-4xl font-heading leading-tight" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
-                Peggy Zokaie — <span className="brand-accent">Master Colorist &amp; Blonde Specialist</span>
+            <motion.h2 className="font-heading text-4xl leading-tight text-deep-black sm:text-5xl" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
+              Peggy Zokaie — <span className="brand-accent">Master Colorist &amp; Blonde Specialist</span>
             </motion.h2>
 
             <motion.p className="mt-6 leading-8 text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
               Peggy Zokaie brings over 18 years of global experience and a refined eye for colour, balance, and natural-looking extensions. Licensed in Canada, Peggy combines technical mastery with a calm, guest-first approach — delivering bespoke colour, seamless extensions, and polished results that suit your lifestyle.
             </motion.p>
 
-            <motion.div className="mt-8 grid gap-3 text-lg font-heading text-deep-black" variants={fadeUpVariants}>
-              {stats.map((stat) => (
-                <div key={stat} className="text-center">
-                  <strong className="block">{stat}</strong>
-                </div>
-              ))}
-            </motion.div>
+            <motion.p className="mt-6 leading-8 text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
+              Her vision for Peggy Beauty was to create a welcoming space where every guest can experience true transformation — from balayage blondes and custom hair coloring to premium hair extensions that bring dream hair to life.
+            </motion.p>
 
-            <motion.ul className="mt-6 list-inside grid gap-3 text-sm text-muted-text" variants={containerVariants}>
-              <li style={{ fontSize: 'var(--faq-answer-size)' }}>Hygiene-first professional care</li>
-              <li style={{ fontSize: 'var(--faq-answer-size)' }}>Premium salon products</li>
-              <li style={{ fontSize: 'var(--faq-answer-size)' }}>Personalized consultations</li>
+            <motion.p className="mt-6 leading-8 text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
+              Peggy’s “why” is simple yet powerful: to help each guest feel like the best version of themselves through expert care, artistry, and attention to detail. Her dedication to modern hairstyling techniques and personalized beauty experiences has made Peggy Beauty one of the most sought-after salons in Toronto.
+            </motion.p>
+
+            <motion.ul className="mt-8 grid gap-3 text-lg font-heading text-deep-black" variants={fadeUpVariants}>
+              <li>Define Hair Studio</li>
+              <li>Created by Passion</li>
+              <li>Built with Love</li>
+              <li>Driven by Success</li>
             </motion.ul>
 
             <motion.div className="mt-6 flex gap-3" variants={fadeUpVariants}>
