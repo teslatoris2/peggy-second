@@ -31,15 +31,15 @@ function FounderSection() {
 
   return (
     <section ref={ref} className="mx-auto max-w-7xl px-6 py-12">
-      <div className="grid gap-8 md:grid-cols-2 md:items-center">
+      <div className="grid gap-8 md:grid-cols-2 md:items-stretch">
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={fadeUpVariants} className="h-full">
           <div className="rounded-lg overflow-hidden ring-1 ring-gray-100 shadow-md">
-            <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-[420px] md:h-[560px] object-top" />
+            <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-full object-top" />
           </div>
         </motion.div>
-
-        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-            <div className="brand-card shadow-lg" style={{ padding: '1.5rem' }}>
+        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants} className="h-full">
+            <div className="brand-card shadow-lg h-full flex flex-col" style={{ padding: '1.5rem' }}>
+              <div className="flex-1">
             <motion.p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] brand-heading-color" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
               FACE BEHIND THE BRAND
             </motion.p>
@@ -66,6 +66,7 @@ function FounderSection() {
               <li>Built with Love</li>
               <li>Driven by Success</li>
             </motion.ul>
+              </div>
 
             <motion.div className="mt-6 flex gap-3" variants={fadeUpVariants}>
               <Link to="/contact" className="inline-flex items-center rounded bg-primary px-4 py-2 text-deep-black font-semibold">Book Now</Link>
