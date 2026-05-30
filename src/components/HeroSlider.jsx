@@ -98,7 +98,7 @@ function HeroSlider() {
         </motion.a>
       </section>
 
-      <section className="bg-offwhite-cream py-10" aria-label="Brand partners">
+      <section className="bg-[#F7E6E2] py-16" aria-label="Brand partners">
         <div className="mx-auto max-w-7xl px-6">
           <Swiper
             slidesPerView={2}
@@ -109,9 +109,9 @@ function HeroSlider() {
             modules={[Autoplay]}
           >
             {brandLogos.map((brand) => (
-              <SwiperSlide key={brand.alt} className="flex items-center justify-center">
-                <div className="bg-white p-3 rounded-xl shadow-sm max-w-[160px] mx-auto">
-                  <img src={brand.src} alt={brand.alt} loading="lazy" className="mx-auto max-h-12 md:max-h-16 w-auto object-contain" />
+              <SwiperSlide key={brand.alt} className="flex items-center justify-center py-4">
+                <div className="bg-white p-6 rounded-xl shadow-sm max-w-[200px] mx-auto">
+                  <img src={brand.src} alt={brand.alt} loading="lazy" className="mx-auto max-h-16 md:max-h-28 w-auto object-contain" />
                 </div>
               </SwiperSlide>
             ))}
