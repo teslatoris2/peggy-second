@@ -24,8 +24,9 @@ function VisitUsSection() {
 
         <div className="pl-8">
           <div className="md:h-full md:flex md:items-center">
-            <div className="border-l border-gray-300 h-full md:pl-8 flex items-center">
+              <div className="border-l border-gray-300 h-full md:pl-8 flex items-center">
               <div className="working-hours md:min-h-[420px] w-full">
+                <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-8 w-full">
                 <ul className="elementor-icon-list-items space-y-8 md:space-y-10">
               {hours.map(([day, time]) => (
                 <li className="elementor-icon-list-item" key={day}>
@@ -35,6 +36,7 @@ function VisitUsSection() {
                 </li>
               ))}
                 </ul>
+                </div>
               </div>
             </div>
           </div>

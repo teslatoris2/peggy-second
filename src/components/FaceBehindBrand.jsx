@@ -81,26 +81,28 @@ function FaceBehindBrand() {
         </motion.div>
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-          <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants}>FACE BEHIND THE BRAND</motion.p>
-          <motion.h2 className="mt-2 text-2xl font-heading" variants={fadeUpVariants}>Julie Brocca, Founder & Creative Director</motion.h2>
-          <motion.p className="mt-3 text-sm text-muted-text" variants={fadeUpVariants}>With over 20 years of experience in the hair and beauty industry, Julie Brocca transformed her lifelong passion for hairstyling into an award-winning luxury salon in Vaughan.</motion.p>
+          <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-10 shadow-lg">
+            <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants}>FACE BEHIND THE BRAND</motion.p>
+            <motion.h2 className="mt-2 text-2xl font-heading" variants={fadeUpVariants}>Julie Brocca, Founder & Creative Director</motion.h2>
+            <motion.p className="mt-3 text-sm text-muted-text" variants={fadeUpVariants}>With over 20 years of experience in the hair and beauty industry, Julie Brocca transformed her lifelong passion for hairstyling into an award-winning luxury salon in Vaughan.</motion.p>
 
-          <motion.div className="mt-6 grid grid-cols-3 gap-4" variants={fadeUpVariants}>
-            {stats.map((stat) => (
-              <div key={stat.label || stat.text} className="text-center">
-                <strong className="block text-xl">{stat.text || `${stat.value}${stat.suffix}`}</strong>
-                <span className="text-sm text-muted-text">{stat.label}</span>
-              </div>
-            ))}
-          </motion.div>
+            <motion.div className="mt-6 grid grid-cols-3 gap-4" variants={fadeUpVariants}>
+              {stats.map((stat) => (
+                <div key={stat.label || stat.text} className="text-center">
+                  <strong className="block text-xl">{stat.text || `${stat.value}${stat.suffix}`}</strong>
+                  <span className="text-sm text-muted-text">{stat.label}</span>
+                </div>
+              ))}
+            </motion.div>
 
-          <motion.ul className="mt-6 list-inside grid gap-2" variants={containerVariants}>
-            {pillars.map((pillar) => (<li key={pillar} className="text-sm">{pillar}</li>))}
-          </motion.ul>
+            <motion.ul className="mt-6 list-inside grid gap-2" variants={containerVariants}>
+              {pillars.map((pillar) => (<li key={pillar} className="text-sm">{pillar}</li>))}
+            </motion.ul>
 
-          <motion.div className="mt-6" variants={fadeUpVariants}>
-            <Link to="/contact" className="inline-flex items-center rounded bg-primary px-4 py-2 text-deep-black font-semibold">Book Now</Link>
-          </motion.div>
+            <motion.div className="mt-6" variants={fadeUpVariants}>
+              <Link to="/contact" className="inline-flex items-center rounded bg-primary px-4 py-2 text-deep-black font-semibold">Book Now</Link>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

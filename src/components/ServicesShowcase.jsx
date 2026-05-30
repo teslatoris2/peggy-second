@@ -52,7 +52,7 @@ function ServicesShowcase() {
               <img src={row.image} alt={`${row.eyebrow} salon service`} className="rounded-lg object-cover w-full h-64 md:h-80" />
             </div>
 
-            <div>
+            <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-8">
               <p className="text-sm text-primary">{row.eyebrow}</p>
               <h3 className="mt-2 text-2xl font-semibold">{row.title}</h3>
               <p className="mt-3 text-sm text-muted-text">{row.description}</p>
