@@ -33,17 +33,19 @@ function FounderSection() {
     <section ref={ref} className="mx-auto max-w-7xl px-6 py-12">
       <div className="grid gap-8 md:grid-cols-2 md:items-center">
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={fadeUpVariants} className="h-full">
-          <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-[420px] md:h-[560px]" />
+          <div className="rounded-lg overflow-hidden ring-1 ring-gray-100 shadow-md">
+            <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-[420px] md:h-[560px] object-top" />
+          </div>
         </motion.div>
 
         <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants}>
-          <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-10">
+          <div className="bg-[#F7F3F0] border border-[#E9E3DE] rounded-lg p-6 md:p-10 shadow-lg">
             <motion.p className="text-sm uppercase tracking-wide text-primary" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
               Face Behind the Brand
             </motion.p>
 
             <motion.h2 className="mt-2 text-3xl md:text-4xl font-heading leading-tight" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-question-size)' }}>
-              Peggy Zokaie — Master Colorist & Blonde Specialist
+              Peggy Zokaie — <span className="text-[#C7936B]">Master Colorist &amp; Blonde Specialist</span>
             </motion.h2>
 
             <motion.p className="mt-4 text-sm text-muted-text" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
