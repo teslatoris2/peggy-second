@@ -14,11 +14,11 @@ function VisitUsSection() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid gap-6 md:grid-cols-2 items-stretch">
           <div className="flex items-center">
-          <div className="w-full text-center md:text-left md:flex md:flex-col md:items-center md:justify-center md:min-h-[420px]">
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-primary sm:tracking-[0.28em]">VISIT US</p>
-            <h2 className="opening-script text-4xl md:text-6xl">Opening Hours</h2>
+          <div className="w-full text-center md:text-left md:flex md:flex-col md:items-center md:justify-center md:min-h-[420px] space-y-6 md:space-y-10">
+            <p className="text-sm md:text-base font-bold uppercase tracking-[0.22em] text-primary">VISIT US</p>
+            <h2 className="opening-script text-5xl md:text-7xl">Opening Hours</h2>
 
-            <Link to="/contact" className="mt-6 inline-flex items-center rounded border border-black px-5 py-2 text-deep-black font-semibold">BOOK YOUR CONSULTATION</Link>
+            <Link to="/contact" className="inline-flex items-center rounded border border-black px-6 py-3 text-lg md:text-xl text-deep-black font-semibold">BOOK YOUR CONSULTATION</Link>
           </div>
         </div>
 
