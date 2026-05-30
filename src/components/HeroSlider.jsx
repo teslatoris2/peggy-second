@@ -98,20 +98,20 @@ function HeroSlider() {
         </motion.a>
       </section>
 
-      <section className="bg-[#F7E6E2] py-16" aria-label="Brand partners">
+      <section className="bg-[#F7E6E2] py-20" aria-label="Brand partners">
         <div className="mx-auto max-w-7xl px-6">
           <Swiper
             slidesPerView={2}
-            spaceBetween={18}
+            spaceBetween={28}
             loop
             autoplay={{ delay: 2200, disableOnInteraction: false }}
             breakpoints={{ 640: { slidesPerView: 3 }, 1024: { slidesPerView: 5 } }}
             modules={[Autoplay]}
           >
             {brandLogos.map((brand) => (
-              <SwiperSlide key={brand.alt} className="flex items-center justify-center py-4">
-                <div className="bg-white p-6 rounded-xl shadow-sm max-w-[200px] mx-auto">
-                  <img src={brand.src} alt={brand.alt} loading="lazy" className="mx-auto max-h-16 md:max-h-28 w-auto object-contain" />
+              <SwiperSlide key={brand.alt} className="flex items-center justify-center py-6">
+                <div className="bg-white p-9 rounded-xl shadow-sm max-w-[260px] mx-auto">
+                  <img src={brand.src} alt={brand.alt} loading="lazy" className="mx-auto max-h-24 md:max-h-36 w-auto object-contain" />
                 </div>
               </SwiperSlide>
             ))}
