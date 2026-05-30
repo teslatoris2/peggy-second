@@ -32,12 +32,12 @@ function FounderSection() {
   return (
     <section ref={ref} className="mx-auto max-w-7xl px-6 py-12">
       <div className="grid gap-8 md:grid-cols-2 md:items-stretch">
-        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={fadeUpVariants} className="h-full">
+        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={fadeUpVariants} className="h-full md:min-h-[560px]">
           <div className="rounded-lg overflow-hidden ring-1 ring-gray-100 shadow-md">
             <img src="/images/salon/peggy-portrait.png" alt="Salon founder portrait" className="rounded-lg object-cover w-full h-full object-top" />
           </div>
         </motion.div>
-        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants} className="h-full">
+        <motion.div animate={inView ? 'visible' : 'hidden'} initial="hidden" variants={containerVariants} className="h-full md:min-h-[560px]">
             <div className="brand-card shadow-lg h-full flex flex-col" style={{ padding: '1.5rem' }}>
               <div className="flex-1">
             <motion.p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] brand-heading-color" variants={fadeUpVariants} style={{ fontSize: 'var(--faq-answer-size)' }}>
